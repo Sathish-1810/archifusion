@@ -1,0 +1,565 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Gilda+Display&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body,html{
+    width:100%;
+    height:100%;
+}
+#main{
+    position: relative;
+    width:100%;
+    height:100%;
+    background-image: url("https://img.freepik.com/free-photo/architectural-black-white-background_23-2150530948.jpg?t=st=1715199244~exp=1715202844~hmac=32cb291a6a4f13c46e9e69a691c71475cdde6a14bce21b4b1e1432654c876427&w=1060");
+    background-size: cover;
+    background-position: center;
+    }
+ #nav {
+    padding:0 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:100%;
+    height:60px;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.929);
+    
+   
+    
+}
+
+#nav a{
+    color:white;
+}
+#nav h5{
+    font-size: 25px;
+    padding-bottom: 16px;
+    color:white;
+}
+#nav #nlinks {
+    display : flex;
+    position: absolute;
+    left:50%;
+    position: fixed;
+    gap:30px;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+   
+}
+
+
+
+ #menubutton {
+    display: none;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: white; /* Button text color */
+    font-size: 18px; /* Button text size */
+}
+#nlinks.active {
+    display: block; /* Active class unte links ni display cheyyali */
+}
+
+#nlinks a {
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+   border-bottom: 2px solid white;
+   padding-bottom:4px;
+   font-size: 14px;
+   font-weight:  550;
+}
+#nlinks a:hover {
+    color:rgb(53, 232, 8);
+    border-bottom: 2px solid rgb(0, 0, 0);
+    
+}
+#text{
+    position:absolute;
+    top:50%;
+    left:5%;
+    transform:translate(0%,-50%);
+    
+    width:40%;
+    height:300px;
+    
+}
+#text h6{
+    display:flex;
+    color:white;
+}
+#text h6 span{
+    font-size:30px;
+    line-height: 25px;
+}
+#text h1{
+    font-size:90px;
+    color:white;
+    margin-top: 30px;
+}
+#lineandtext{
+    display: flex;
+    color:white;
+    gap:20px;
+}
+#line{
+    width:120px;
+    height:1px;
+    background-color: white;
+}
+#lineandtext p{
+    font-size:14px;
+    width:50%;
+    margin-top: -5px;
+}
+#bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    gap:40px;
+    bottom:0;
+    left:0;
+    width:70%;
+    height:20%;
+    background-color: white;
+}
+#cube{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top:-50px;
+    right:-50px;
+    color:rgb(255, 253, 253);
+    width:50px;
+    height:50px;
+    background-color: rgb(178, 152, 152);
+}
+#bottom .sec3 p{
+    opacity: .5;
+    font-size: 12px;
+    font-weight:700;
+}
+
+
+/*modern starts*/
+#modern{
+    position: relative;
+    width:100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.4)), url(" https://img.freepik.com/free-photo/futuristic-representation-water-structure_23-2151048215.jpg?t=st=1723531343~exp=1723534943~hmac=eccc0c5ba512e10499d4b99539d89dea8688e9894520328352a36024d6251733&w=900");
+    background-position: center;
+    background-size: cover;
+    
+}
+#modernmain{
+    width:100%;
+    height:100%;
+   
+}
+#modernmain h1{
+    text-align: center;
+    padding:60px;
+    font-size: 40px;
+    color:white;
+}
+.moderncontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px; /* Space between cards */
+    padding: 20px;
+}
+
+.card1 {
+    flex:1;
+    background: rgba(0, 0, 0, 0.7); 
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 300px; 
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    
+}
+
+.card1 img {
+    flex: 1 1;
+    width: 100%;
+    height: 150px;
+    border-radius: 10px; /* Rounded corners for the image */
+}
+
+.card1 h3 {
+    margin-top: 15px;
+    font-size: 1.5em; /* Adjust as needed */
+    color:white;
+}
+
+.card1 p {
+    margin-top: 10px;
+    font-size: 1em; /* Adjust as needed */
+    color: #ddd; /* Lighter color for the paragraph text */
+}
+/*modern ends*/
+/*industirla starts */
+#industrial{
+    width: 100%;
+    height:100%;
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.4)), url("https://img.freepik.com/free-photo/monochromatic-urban-minimal-landscape_23-2151011613.jpg?t=st=1723728475~exp=1723732075~hmac=50c9eaf602cb0ac5daf399276cc0976bfffb91a5a1f048ce6caef59ecfe3ef01&w=1060");
+    background-size: cover;
+    background-position: center;
+}
+#idustrialheading {
+    color: white;
+    text-align: center;
+    padding-top: 80px;
+    font-size: 22px;
+    font-family: "Archivo Black";
+}
+
+#indcontent {
+    
+    display: flex;
+    flex-direction: row; /* Changed to row to align image and text side-by-side */
+    justify-content: space-between;
+    align-items: center; /* Align items vertically centered */
+    padding: 20px;
+    gap: 20px; /* Adds space between image and text */
+}
+
+#archiimg {
+    flex: 1; /* Allows image container to take available space */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#archiimg img {
+    max-width: 100%; /* Adjust to fit container */
+    height: auto; /* Maintains aspect ratio */
+    box-shadow: 0 0 5px 8px rgba(0, 0, 0, 0.6);
+    margin-top: 35px;
+    width:499px;
+    height:300px;
+}
+
+#architext {
+    flex: 1; /* Allows text container to take available space */
+    padding-left: 20px; /* Adds space between image and text */
+}
+
+#architext p {
+    font-size: 18px; /* Adjusted for better readability */
+    color: rgb(249, 249, 249);
+    max-width: 100%; /* Ensures text container takes full width available */
+    font-family: "Edu VIC WA NT Beginner", cursive;
+    line-height: 1.5; /* Adjusted for readability */
+    text-align: left; /* Align text to the left */
+}
+
+/*industirla ends */
+/*archifustion starts*/
+#archifusion{
+    width:100%;
+    height:100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("https://img.freepik.com/premium-photo/black-white-photo-tunnel-that-has-large-window-wall_670672-9122.jpg?w=1060");
+    background-position: center;
+    background-size: cover;
+}
+#archifushionheading{
+    text-align: center;
+    color:white;
+    padding-top: 70px;
+    font-size: 25px;
+    font-family: "Archivo Black"
+}
+#archifusionconainer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:20px;
+    
+    padding:10px;
+}
+.cardd1 {
+    flex:1 1;
+    background: rgba(0, 0, 0, 0.753);
+    border-radius: 10px;
+    
+    overflow: hidden;
+    max-width: 280px;
+    color:white  ;
+    text-align: center;
+    padding: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    -webkit-transition: transform 0.3s ease, box-shadow 0.3s ease;
+    -moz-transition: transform 0.3s ease, box-shadow 0.3s ease;
+    -ms-transition: transform 0.3s ease, box-shadow 0.3s ease;
+    -o-transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cardd1 img{
+    flex: 1 1;
+    width: 100%;
+    height: 90px;
+    border-radius: 10px; 
+    
+}
+.cardd1 p{
+    flex:1 1;
+    font-family: "Edu VIC WA NT Beginner", cursive;
+}
+/*archifustion ends*/
+
+
+/* contact us starts*/
+
+#contactus {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://img.freepik.com/free-photo/monochromatic-urban-minimal-landscape_23-2151011614.jpg?t=st=1723642199~exp=1723645799~hmac=b860987d830ff9ef2fb4fef49381cc6f8c52b9f7b9e1aaa89262deb9b913659e&w=1060");
+    background-size: cover;
+    background-position: center;
+  }
+  
+#contactusheading h1{
+    text-align:center;
+    padding:65px;
+    font-size: 35px;
+    color:white;
+    letter-spacing :1px;
+}
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding:10px;
+    background-color: rgba(0, 0, 0, 0.555);
+    max-width: 400px;
+    margin: 0 auto;
+   
+}
+ label{
+    display: block;
+    text-align: left;
+    font-size: 20px;
+    color:white;
+    padding-right: 290px;
+    margin: 20px;
+    
+  
+}
+input[type="text"],input[type="email"],textarea{
+    width:100%;
+    padding:5px;
+    border:1px solid #ccc;
+    border-radius:4px;
+   background: transparent;
+    -moz-border-radius:4px;
+    -ms-border-radius:4px;
+    -o-border-radius:4px;
+    -webkit-border-radius:4px;
+    color:white;
+}
+button{
+    padding:5px 8px;
+    margin-top: 20px;
+    font-size: 15px;
+    border: none;
+    background-color: chartreuse;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+button:hover{
+    background-color: rgb(99, 116, 105);
+}
+
+/* contact us ends*/
+
+/*responsive webpage*/
+/*home page starts*/
+@media only screen and (max-width:960px) {
+    #nav {
+        padding: 0;
+        height: auto;
+        position: fixed;
+        
+        
+        
+    }
+    
+     #nav #nlinks {
+        
+        position: absolute;
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(98, 67, 67);
+        display: none;
+        padding-bottom: 2rem;
+        top:245px;
+        left:179px; 
+       
+       
+    }
+
+     #menubutton {
+    
+            position: absolute;
+            top:10px;
+            right:20px;
+            font-size: 23px;
+           cursor: pointer;
+           margin-top: 0px;
+           display: block;
+           cursor: pointer;
+           color:yellowgreen;
+           font-weight: 700;
+        }
+    
+
+    #nav  #nlinks.active {
+        display: flex; 
+        
+    }
+
+    #text {
+        width: 90%;
+        height: auto;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        top:30%;
+      
+    }
+
+    #text h1 {
+        font-size: 50px;
+        color:  rgb(155, 17, 17);
+    }
+    #lineandtext p{
+        color:rgb(68, 130, 70);
+    }
+
+    #bottom {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    #cube {
+        width: 30px;
+        height: 30px;
+        top: -40px;
+        right: -30px;
+    }
+    #bottom{
+        max-width:90%;
+        background-color: rgb(137, 121, 109);
+    }
+    /*home page ends*/
+    #modern{
+        height:auto;
+        width:100%;
+        
+    }
+    .moderncontainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card1{
+        max-width: 300px;
+        height: auto;
+    }
+    /*industrial section*/
+    #industrial{
+        height:auto;
+        width:100%;
+        padding-right: 1rem;
+    }
+    #indcontent{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width:100%;
+       
+        padding-right: 90px;
+    }
+    #idustrialheading h1{
+        padding-left: 0rem;
+    }
+    #archiimg{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       overflow: hidden;
+       padding-left: 2rem;
+     
+    }
+    #archiimg img{
+        width: 100%;
+        
+        padding-top: -10px;
+    }
+    #architext {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin-right: 0rem;
+        padding-top: 10px;
+       
+    }
+    
+    #architext p {
+         max-width: 800px;
+        font-size:0.7rem;
+        line-height: 4vmin;
+    }
+    /*archi servies*/
+   #archifusion{
+    width:100%;
+    height:auto;
+   }
+   #archifusionconainer{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+   }
+   #contactus{
+    width:100%;
+    height:auto;
+   }
+   form{
+    max-width: 200px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+        
+}
+   label{
+
+    padding-left: 266px;
+   }
+}
